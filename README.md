@@ -8,6 +8,7 @@ I wanted to create a simple browser based game as a fun introduction to the rail
 ## Installation
 
 ### Clone the repository
+in your terminal:
 
 ```Ruby
 git clone git@github.com:karmar4/rails-longest-word-game.git
@@ -15,6 +16,7 @@ cd project
 ```
 
 ### Check your Ruby version
+in your terminal:
 
 ```
 ruby -v
@@ -23,19 +25,21 @@ ruby -v
 if you have a version below 2.5.1 install a leter version:
 
 ```
-rbenv install 2.5.1
+rbenv install 2.6.3
 ```
 
 ### install gems
+in your terminal:
 ``` 
 bundle install
 ```
 ## API Used
-* 'https://wagon-dictionary.herokuapp.com/'
+* https://wagon-dictionary.herokuapp.com/ 
+*chosen word added to the end*
 
 
 ## Serve
-
+in your terminal:
 ``` 
 rails s
 ```
