@@ -1,14 +1,24 @@
-<h1>Games#score</h1>
-<p>Find me in app/views/games/score.html.erb</p>
+<h1>Your Score</h1>
 <%if @contains == false%>
   <p>Sorry <%=@answer[:word]%> cant be build out of <%=@answer[:letters]%> </p>
 <% elsif @real_word == false%>
   <p>Sorry <%=@answer[:word]%> is not a valid English word</p>
 <% elsif @real_word == true%>
-  <p>Congrats <%=@answer[:word]%> is a valid english word</p>
+  <% start = Time.parse @answer['start_time'] %>
+  <% now = Time.now %>
+  <% score = ((start - now) + (@answer[:word].size * 2) + 20).round() %>
+    <% if score < 0%>
+      <p>Too slow bucko</p>
+    <% else %>
+      <p> Score: <%= score %></p>
+    <% end %>
 <% end %>
 
-<small><%= link_to "have another go", new_path %></small>
+<small><%= link_to "have another go", root_path %></small>
+
+
+
+
 
 
 

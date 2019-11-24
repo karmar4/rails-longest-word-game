@@ -17,7 +17,7 @@ class GamesController < ApplicationController
 
   def contains(answer)
 
-    answer[:word].split('').each do |char|
+    answer[:word].upcase.split('').each do |char|
       @letters = answer[:letters]
       if @letters.include? char
         @letters.delete(char)
@@ -32,8 +32,7 @@ class GamesController < ApplicationController
     url = 'https://wagon-dictionary.herokuapp.com/' + answer[:word]
     word_result = open(url).read
     result = JSON.parse(word_result)
-
-    if result["found"] = false
+    if result["found"] == false
       return false
     else
       return true
