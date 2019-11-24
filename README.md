@@ -3,27 +3,32 @@
 Longest word game is a browser based game in which you try to create the longest word out of the characters given in the shortest amount of time
 
 ## Motivation
-I wanted to create a simple browser based game using as a fun introduction to the rails framework.
+I wanted to create a simple browser based game as a fun introduction to the rails framework.
 
 ## Installation
 
-###Clone the repository
+### Clone the repository
 
-```git clone git@github.com:karmar4/rails-longest-word-game.git
+```Ruby
+git clone git@github.com:karmar4/rails-longest-word-game.git
 cd project
 ```
 
-###Check your Ruby version
+### Check your Ruby version
 
-```ruby -v```
+```
+ruby -v
+```
 
 if you have a version below 2.5.1 install a leter version:
 
-```rbenv install 2.5.1
+```
+rbenv install 2.5.1
 ```
 
-###install gems
-``` bundle install
+### install gems
+``` 
+bundle install
 ```
 ## API Used
 * 'https://wagon-dictionary.herokuapp.com/'
@@ -31,7 +36,8 @@ if you have a version below 2.5.1 install a leter version:
 
 ## Serve
 
-``` rails s
+``` 
+rails s
 ```
 
 ## How it works
