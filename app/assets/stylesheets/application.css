@@ -22,3 +22,11 @@ body{
   padding: 5px 10px;
   border: solid 1px lightgrey;
 }
+
+.my-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 25vh;
+  height: 50vh;
+}
